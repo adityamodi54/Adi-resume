@@ -35,7 +35,7 @@ def main():
         ## 📞 Contact Information
         - **Email:** `aditmodi2@gmail.com.com`
         - **Phone:** `+1234567890`
-        - **Location:** `Toronto, CA`
+        - **Location:** `Toronto, Canada`
     """)
     st.markdown("""
         ## 📝 Professional Summary
@@ -60,9 +60,9 @@ def main():
     """)
     st.markdown("""
         ## 🛠 Skills
-        - **Programming Languages:** Python, JavaScript, C#
-        - **Frameworks:** React, Angular
-        - **Tools:** Git, Docker, Jenkins
+        - **Programming Languages:** Python
+        - **Frameworks:** React, Angular , Open AI , Stremlite
+        - **Tools:** Git, Docker, Jenkins , Excel, Tableau, Power BI.
         - **Other:** Agile Methodologies, UX Design
     """)
 
