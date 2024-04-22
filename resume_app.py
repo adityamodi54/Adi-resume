@@ -1,5 +1,49 @@
 import streamlit as st
 
+def render_skills():
+    st.markdown("""
+        <div class="skills-title">🛠 Skills</div>
+        <div class="skills-container">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Pandas</div>
+            <div class="skill-item">Numpy</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">Angular</div>
+            <div class="skill-item">Git</div>
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">Jenkins</div>
+            <div class="skill-item">Agile Methodologies</div>
+            <div class="skill-item">UX Design</div>
+        </div>
+    """, unsafe_allow_html=True)
+
+def render_education_and_experience():
+    st.markdown("""
+        <div>
+            <div class="section-title">🎓 Education</div>
+            <div class="info-box">
+                <div class="info-title">Bachelor of Science in Computer Science</div>
+                <div class="info-subtitle">University of California, Berkeley</div>
+                <div class="info-footer">2005 - 2009</div>
+            </div>
+            <!-- Add more education entries if needed -->
+        </div>
+        <div>
+            <div class="section-title">💼 Work Experience</div>
+            <div class="info-box">
+                <div class="info-title">Senior Software Developer</div>
+                <div class="info-subtitle">Tech Solutions Inc., San Francisco, CA</div>
+                <div class="info-footer">June 2015 - Present</div>
+                <ul class="info-details">
+                    <li>Lead a team of 10 developers in creating information systems for clients in the finance industry.</li>
+                    <li>Focus on improving application responsiveness and streamline functionalities.</li>
+                    <li>Conduct code reviews, mentor junior developers, and manage project timelines.</li>
+                </ul>
+            </div>
+            <!-- Add more work experience entries if needed -->
+        </div>
+    """, unsafe_allow_html=True)
+
 def main():
     # Advanced CSS and HTML for enhanced appearance and icons
     st.markdown("""
@@ -26,16 +70,62 @@ def main():
             color: #ff6347; /* Matching the headers */
             padding-right: 10px; /* Space between icon and text */
         }
+
+        /* New styles for education and experience sections */
+        .section-title {
+            font-weight: bold;
+            color: #007bff; /* Blue color for the section titles */
+            margin-bottom: 5px;
+        }
+        .info-box {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #007bff; /* Blue color for the vertical line */
+        }
+        .info-title {
+            font-weight: bold;
+        }
+        .info-subtitle {
+            color: #555; /* Darker grey for subtitle */
+        }
+        .info-details {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .info-footer {
+            color: #777; /* Lighter grey for footer (dates, location) */
+        }
+        
+        /* Styles for skills section */
+        .skills-title {
+            color: #007bff; /* Blue color for the skills title */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: #e1e1e1;
+            color: #007bff; /* Blue color for skill text */
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
         </style>
         """, unsafe_allow_html=True)
 
-    st.title("🧳 Adi's Resume")
+    st.title("🧳 Jane Doe's Resume")
 
     st.markdown("""
         ## 📞 Contact Information
-        - **Email:** `aditmodi2@gmail.com.com`
+        - **Email:** `jane.doe@example.com`
         - **Phone:** `+1234567890`
-        - **Location:** `Toronto, Canada`
+        - **Location:** `San Francisco, CA`
     """)
     st.markdown("""
         ## 📝 Professional Summary
@@ -43,28 +133,14 @@ def main():
         Strong background in project management and customer relations. Committed to high standards of user experience,
         optimizing performance, and collaborating effectively with team members.*
     """)
-    st.markdown("""
-        ## 💼 Work Experience
-        **Senior Software Developer**  
-        *Tech Solutions Inc., San Francisco, CA*  
-        **June 2015 - Present**
-        - Lead a team of 10 developers in creating information systems for clients in the finance industry.
-        - Focus on improving application responsiveness and streamline functionalities.
-        - Conduct code reviews, mentor junior developers, and manage project timelines.
-    """)
-    st.markdown("""
-        ## 🎓 Education
-        **Bachelor of Science in Computer Science**  
-        *University of California, Berkeley*  
-        **2005 - 2009**
-    """)
-    st.markdown("""
-        ## 🛠 Skills
-        - **Programming Languages:** Python
-        - **Frameworks:** React, Angular , Open AI , Stremlite
-        - **Tools:** Git, Docker, Jenkins , Excel, Tableau, Power BI.
-        - **Other:** Agile Methodologies, UX Design
-    """)
+
+    # Render the education and work experience sections
+    render_education_and_experience()
+    
+    # Render the skills section
+    render_skills()
+
+    # ... Include any additional sections you want ...
 
 if __name__ == "__main__":
     main()
