@@ -119,13 +119,13 @@ def main():
         </style>
         """, unsafe_allow_html=True)
 
-    st.title("🧳 Jane Doe's Resume")
+    st.title("🧳 Adi's Resume")
 
     st.markdown("""
         ## 📞 Contact Information
-        - **Email:** `jane.doe@example.com`
+        - **Email:** `aditmodi2@gmail.com`
         - **Phone:** `+1234567890`
-        - **Location:** `San Francisco, CA`
+        - **Location:** `Toronto, Canada`
     """)
     st.markdown("""
         ## 📝 Professional Summary
